@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+#hero h2 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#hero p a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+#hero p a:hover {
+    background-color: #555;
+}
+
+#hero p {
+    font-size: 1.1em;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    color: #444;
+    line-height: 1.8;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-left: 5px solid #e0c097;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#hero cite {
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*Homepage Styles*/
+#intro {
+    text-align: center;
+    padding: 20px;
+}
+
+#home #highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#home #highlights div {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/*History Styles*/
+
+#history #highlights {
+    display: block;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#history #highlights div {
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/*Food Styles*/
+
+#food #hero img{
+    width: 500px;
+}
+
+#intro {
+    background-color: #fff9f4;
+    border-top: 3px solid #e0c097;
+    border-bottom: 3px solid #e0c097;
+    padding: 40px 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+#intro video {
+    width: 600px;
+}
+
+#food-table {
+    max-width: 950px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#food-table h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#food-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 1em;
+}
+
+#food-table caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#food-table th,
+#food-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#food-table thead {
+    background-color: #f9f0e5;
+    border-bottom: 2px solid #e0c097;
+}
+
+#food-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#food #highlights {
+    display: block;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#food .gallery-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#food .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#food .gallery-item h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+#food .gallery-item .description {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 10px;
+    opacity: 1;
+    position: static;
+    background: none;
+}
+
+/*Attractions Styles*/
+#attractions #highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#attractions #highlights div {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#attractions #highlights div:hover {
+    transform: scale(1.05);
+}
+
+#attractions #highlights img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#attractions #highlights h3 {
+    margin: 10px 0;
+}
+
+#highlights a {
+    text-decoration: none;
+    color: #333;
+}
+
+#highlights a:hover {
+    color: #0077cc;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    justify-content: center;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
